@@ -1,3 +1,5 @@
+<app-usuario></app-usuario>
+
 <p>{{ welcomeMessage }}</p>
 
 <p>Nombre: {{ person.name }}, Edad: {{ person.age }}</p>
@@ -11,3 +13,62 @@
 <p>{{ isLoggedIn ? 'Bienvenido de nuevo' : 'Por favor iniciar sesión' }}</p>
 
 <p>Fecha actual : {{ currentDate | date:'short' }}</p>
+
+<button (click)="visibleSwitch()">Click me ☺️</button>
+
+@if (isVisible) {
+<p>¡Bienvenido al curso de Angular!</p>
+}
+
+
+<app-lista-frutas></app-lista-frutas>
+<app-score></app-score>
+<app-lista-usuario></app-lista-usuario>
+
+<br />
+
+<!-- <p [ngClass]="{'active': condicion, 'noActive': condicion}">
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro laborum hic, qui unde totam voluptatibus aspernatur
+  accusamus corporis similique perferendis, cum expedita ad. Atque fugit voluptatibus natus et doloribus quidem!
+</p>
+
+<input type="text" [(ngModel)]="title" />
+<button (click)="cambiar()">cambiar</button><br />
+{{ title }}
+<br />
+<br /> -->
+
+<!-- pipe personalizado  -->
+<!-- {{ 6 | restar }} -->
+
+<app-message [text]="'Hola, bienvenido a Angular!'"></app-message>
+
+<app-color-box [color]="'lightblue'"></app-color-box>
+<br>
+
+<app-alert-button (alert)="showAlert($event)"></app-alert-button>
+<br>
+<br>
+
+<app-counter (countChanged)="updateCount($event)"></app-counter>
+<br>
+
+<p>{{ 'hola mundo' | uppercase }}</p>
+
+<p>{{ 'Angular es increíble' | firstword }}</p>
+
+<p>{{ 'Angular' | reversetext }}</p>
+
+<div>
+  <button (click)="verperrito()">Ver perrito 🐕‍🦺</button>
+</div><br>
+
+<div>
+  <img src="{{ perrito }}" />
+</div>
+
+<div>
+  <app-guarderia-perritos></app-guarderia-perritos>
+</div>
+
+<router-outlet />

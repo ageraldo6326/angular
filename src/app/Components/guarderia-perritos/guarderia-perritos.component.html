@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetParadise</title>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="section about">
+      <h2>About PetParadise</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.</p>
+    </div>
+
+    <div class="section image image-top">
+      <img src="{{ perrito }}" alt="Dog with toy">
+    </div>
+
+    <div class="section branding">
+      <div class="logo">
+        <i class="fas fa-dog"></i>
+        <h1>PetParadise</h1>
+      </div>
+      <p>Your Pet's Home Away from Home!</p>
+    </div>
+
+    <div class="section qr">
+      <h3>Scan for more information</h3>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://petparadise.com" alt="QR Code">
+    </div>
+
+    <div class="section contact">
+      <h2>Wag Your Way to Us!</h2>
+      <p><i class="fas fa-map-marker-alt"></i> 3191 Florence Street, Athens, TX 75751</p>
+      <p><i class="fas fa-phone"></i> +1 725-320-2997</p>
+      <p><i class="fas fa-globe"></i> www.petparadise.com</p>
+    </div>
+
+    <div class="section image image-bottom">
+      <img src="{{ perrito2 }}" alt="Dog resting">
+    </div>
+  </div>
+  <button (click)="verperrito()">Ver perrito 🐕‍🦺</button>
+</body>
+
+</html>

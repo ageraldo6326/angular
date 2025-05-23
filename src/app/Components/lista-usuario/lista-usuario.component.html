@@ -1,0 +1,19 @@
+<br>
+<br>
+
+<table border="1">
+  <thead>
+    <th>Usuario</th>
+    <th>Edad</th>
+    <th>Status</th>
+  </thead>
+  <tbody>
+    @for (usuario of usuarios; track $index) {
+    <tr>
+      <td>{{usuario.nombre}}</td>
+      <td>{{usuario.edad}}</td>
+      <td>@if (usuario.activo==true) {Activo} @else {Inactivo}</td>
+    </tr>
+    }
+  </tbody>
+</table>
