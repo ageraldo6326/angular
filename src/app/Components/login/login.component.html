@@ -1,0 +1,29 @@
+<div class="contenedor-login">
+
+  <form [formGroup]="userForm" novalidate>
+    <h2>Usuario ageraldo</h2>
+    <h2>Password 1234</h2>
+    <div>
+      <label for="usuario">Usuario: </label>
+      <input id="usuario" type="text" formControlName="usuario" autocomplete="username"
+        placeholder="Introducir tu usuario" />
+      @if (errorUsuario) {
+      <p class="error-message">* El usuario es un campo requerido</p>
+      }
+    </div>
+
+    <div>
+      <label for="clave">Contraseña:</label>
+      <input id="clave" type="password" formControlName="clave" autocomplete="current-password"
+        placeholder="Introducir tu contraseña" />
+      @if (errorClave) {
+      <p class="error-message">* La contraseña es un campo requerido</p>
+      }
+    </div>
+
+    <button type="submit" (click)="onSubmit()" class="login-btn">Iniciar sesión</button>
+    @if(errorCredenciales) {
+    <p class="error-message">* Usuario o contraseña incorrectos</p>
+    }
+  </form>
+</div>

@@ -1,0 +1,25 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+    <ul class="nav-menu" [class.active]="menuAbierto">
+      <div class="menu-left">
+        <li><a routerLink="usuarios" routerLinkActive="active">Usuarios</a></li>
+        <li><a routerLink="bienvenido" routerLinkActive="active">Bienvenido</a></li>
+        <li><a routerLink="directivasestructurales" routerLinkActive="active">Directivas</a></li>
+        <li><a routerLink="interpolacion" routerLinkActive="active">Interpolación</a></li>
+        <li><a routerLink="mensajepadrehijo" routerLinkActive="active">Padre-Hijo</a></li>
+        <li><a routerLink="mensajehijopadre" routerLinkActive="active">Hijo-Padre</a></li>
+        <li><a routerLink="pipe" routerLinkActive="active">Pipe</a></li>
+        <li><a routerLink="perritos" routerLinkActive="active">Perrito</a></li>
+      </div>
+      <div class="menu-right">
+        <li class="tituloUsuario">Usuario: {{usuario}}</li>
+        <li><a routerLink="logout" routerLinkActive="active">Logout</a></li>
+      </div>
+    </ul>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>

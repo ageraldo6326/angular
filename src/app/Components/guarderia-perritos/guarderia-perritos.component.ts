@@ -15,7 +15,7 @@ export class GuarderiaPerritosComponent {
   constructor (private perritoService: PerritosService) {}
 
   async verperrito() {
- await this.perritoService.getPerritoImg().subscribe(data => {
+    await this.perritoService.getPerritoImg().subscribe(data => {
       this.perrito = data.message
     })
 

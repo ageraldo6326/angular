@@ -1,0 +1,81 @@
+/* Fondo general */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Contenedor principal centrado */
+.contenedor-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Formulario */
+form {
+  background-color: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+/* Campos */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Errores */
+small {
+  color: #d32f2f;
+  font-size: 0.85rem;
+
+}
+
+button.login-btn {
+  width: 100%;           /* Ocupa todo el ancho del contenedor */
+  background-color: #007BFF; /* Azul estándar tipo Bootstrap */
+  color: white;          /* Texto blanco */
+  border: none;          /* Sin borde */
+  padding: 12px;         /* Espacio interno */
+  font-size: 16px;       /* Tamaño de texto legible */
+  border-radius: 5px;    /* Bordes redondeados */
+  cursor: pointer;       /* Cursor puntero al pasar el mouse */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button.login-btn:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.error-message {
+  color: #d32f2f; /* Rojo para mensajes de error */
+  font-size: 0.9rem; /* Tamaño de fuente ligeramente más grande */
+  margin-top: 0.5rem; /* Espacio entre el mensaje y el campo */
+}

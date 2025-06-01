@@ -1,33 +1,12 @@
-<app-usuario></app-usuario>
+<!-- <app-usuario></app-usuario>
 
-<p>{{ welcomeMessage }}</p>
+<app-bienvenido></app-bienvenido>
 
-<p>Nombre: {{ person.name }}, Edad: {{ person.age }}</p>
+<app-interporlacion></app-interporlacion>
 
-<p>La resta de num1 = 12 y num2 = 20 es {{ resultado1 }}</p>
+<app-mensaje-boton></app-mensaje-boton>
 
-<p>La multiplicación de num1 = 8 y num2 = 4 es {{ resultado2 }}</p>
-
-<p>El área del círculo es {{ calculateArea(radio) }}</p>
-
-<p>{{ isLoggedIn ? 'Bienvenido de nuevo' : 'Por favor iniciar sesión' }}</p>
-
-<p>Fecha actual : {{ currentDate | date:'short' }}</p>
-
-<button (click)="visibleSwitch()">Click me ☺️</button>
-
-@if (isVisible) {
-<p>¡Bienvenido al curso de Angular!</p>
-}
-
-
-<app-lista-frutas></app-lista-frutas>
-<app-score></app-score>
-<app-lista-usuario></app-lista-usuario>
-
-<br />
-
-<!-- <p [ngClass]="{'active': condicion, 'noActive': condicion}">
+<p [ngClass]="{'active': condicion, 'noActive': condicion}">
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro laborum hic, qui unde totam voluptatibus aspernatur
   accusamus corporis similique perferendis, cum expedita ad. Atque fugit voluptatibus natus et doloribus quidem!
 </p>
@@ -36,28 +15,16 @@
 <button (click)="cambiar()">cambiar</button><br />
 {{ title }}
 <br />
-<br /> -->
+<br />
 
-<!-- pipe personalizado  -->
-<!-- {{ 6 | restar }} -->
+pipe personalizado 
+{{ 6 | restar }}
 
-<app-message [text]="'Hola, bienvenido a Angular!'"></app-message>
+<app-mensaje-padre-hijo></app-mensaje-padre-hijo>
 
-<app-color-box [color]="'lightblue'"></app-color-box>
-<br>
+<app-mensaje-hijo-padre></app-mensaje-hijo-padre>
 
-<app-alert-button (alert)="showAlert($event)"></app-alert-button>
-<br>
-<br>
-
-<app-counter (countChanged)="updateCount($event)"></app-counter>
-<br>
-
-<p>{{ 'hola mundo' | uppercase }}</p>
-
-<p>{{ 'Angular es increíble' | firstword }}</p>
-
-<p>{{ 'Angular' | reversetext }}</p>
+<app-pipe></app-pipe>
 
 <div>
   <button (click)="verperrito()">Ver perrito 🐕‍🦺</button>
@@ -67,8 +34,8 @@
   <img src="{{ perrito }}" />
 </div>
 
-<div>
-  <app-guarderia-perritos></app-guarderia-perritos>
-</div>
+<app-guarderia-perritos></app-guarderia-perritos> -->
 
-<router-outlet />
+
+<!-- <app-menu></app-menu> -->
+<router-outlet></router-outlet>
